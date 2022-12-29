@@ -15,7 +15,7 @@ RUN set -xe; \
     ./config \
         -DGMSSL_NO_TURBO \
         no-afalgeng \
-    && make \
+    && make -j$(nproc) \
     && make install
 
 WORKDIR /data

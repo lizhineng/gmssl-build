@@ -11,7 +11,7 @@ RUN set -xe; \
     mkdir build \
     && cd build \
     && cmake .. \
-    && make \
+    && make -j$(nproc) \
     && make install
 
 WORKDIR /data
