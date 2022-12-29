@@ -13,6 +13,7 @@ RUN set -xe; \
 
 RUN set -xe; \
     ./config \
+        -DGMSSL_NO_TURBO \
     && make \
     && make install
 
