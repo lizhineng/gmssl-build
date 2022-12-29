@@ -14,6 +14,7 @@ RUN set -xe; \
 RUN set -xe; \
     ./config \
         -DGMSSL_NO_TURBO \
+        no-afalgeng \
     && make \
     && make install
 
