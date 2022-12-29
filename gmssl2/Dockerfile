@@ -20,3 +20,4 @@ RUN set -xe; \
 
 WORKDIR /data
 ENTRYPOINT ["gmssl"]
+CMD ["help"]
